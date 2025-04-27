@@ -30,6 +30,7 @@ function Dashboard(){
             console.error("Error fetching data:", error);
         }
     };
+    
     useEffect(()=>{
         Fetchdata();
     },[reload])  
