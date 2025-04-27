@@ -11,7 +11,7 @@ import MongoStore from "connect-mongo";
 
 dotenv.config();
 const app=express();
-const PORT=5000;
+const PORT= process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
